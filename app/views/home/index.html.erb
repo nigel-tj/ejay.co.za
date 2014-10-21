@@ -1,0 +1,71 @@
+<!-- it works the same with all jquery version from 1.x to 2.x -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jssor.slider.mini.js"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        var options = { $AutoPlay: true };
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    });
+</script>
+<div class="row home">
+  <div id="home" class="twelve columns"> 
+    <%# <img class="home-bg" src="/images/IMG-20140618-WA011.jpg" alt="Trailer Placeholder" /> %>
+    <div class="row hide-on-phones">
+      
+    </div>
+    <div class="row show-on-phones">
+      <div class="two columns"> 
+        <img class="logo small" src="/images/logo.png" alt="Honors English Logo" />
+      </div>
+    </div>
+    <div class="padding">
+      <div class="row trailer">
+        <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px; height: 552px;">
+          <!-- Slides Container -->
+          <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 800px; height: 552px;">
+            <div><img u="image" src="images/IMG-20140618-WA003.jpg" /></div>
+            <div><img u="image" src="images/IMG-20140618-WA008.jpg" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row connect">
+    <div id="connect" class="twelve columns">
+      <div class="four columns"> 
+        <div class="toggleable-item" data-toggle-key="twitter">
+          <div class="content-block single bottom-box">
+            <!-- header -->
+                        
+            <div class="clearfix"></div>
+            <!--content-->
+            <div class="section-content">
+              <div class="toggleable-item" data-toggle-key="facebook">
+                <div class="fb-like-box" data-href="https://www.facebook.com/redvillage.co.za" data-width="100%" data-height="440" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="four columns"> 
+        <div class="content-block single bottom-box" id="tour-section">
+          <!-- header -->
+          
+          <div class="clearfix"></div>
+          <!-- content -->
+          <div class="section-content">
+            <iframe src="http://snapwidget.com/in/?u=cm9jbmF0aW9ufGlufDE0NXwzfDN8fG5vfDh8bm9uZQ==" allowTransparency="true" frameborder="0" scrolling="yes" style="border:none; overflow:hidden; width:100%; height: 459px" ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="four columns"> 
+        <div class="clearfix"></div>
+        <a class="twitter-timeline"  href="https://twitter.com/hypej10" data-widget-id="520557610890567681">Tweets by @hypej10</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
