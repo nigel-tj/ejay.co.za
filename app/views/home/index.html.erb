@@ -1,12 +1,23 @@
-<!-- it works the same with all jquery version from 1.x to 2.x -->
-<script src="js/jquery.min.js"></script>
-<script src="js/jssor.slider.mini.js"></script>
+<script type='text/javascript' src='scripts/jquery.min.js'></script>
+<script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+<script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='scripts/camera.min.js'></script> 
 <script>
-    jQuery(document).ready(function ($) {
-        var options = { $AutoPlay: true };
-        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
-    });
+  jQuery(function(){
+  
+  jQuery('#camera_wrap_1').camera({
+  thumbnails: true
+  });
+  
+  jQuery('#camera_wrap_2').camera({
+  height: '400px',
+  loader: 'bar',
+  pagination: false,
+  thumbnails: true
+  });
+  });
 </script>
+
 <div class="row home">
   <div id="home" class="twelve columns"> 
     <%# <img class="home-bg" src="/images/IMG-20140618-WA011.jpg" alt="Trailer Placeholder" /> %>
@@ -20,13 +31,42 @@
     </div>
     <div class="padding">
       <div class="row trailer">
-        <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px; height: 552px;">
-          <!-- Slides Container -->
-          <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 800px; height: 552px;">
-            <div><img u="image" src="images/IMG-20140618-WA003.jpg" /></div>
-            <div><img u="image" src="images/IMG-20140618-WA008.jpg" /></div>
-          </div>
-        </div>
+        <div class="fluid_container">
+          <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+            <div data-thumb="../images/slides/thumbs/bridge.jpg" data-src="../images/slides/bridge.jpg">
+              <div class="camera_caption fadeFromBottom">
+                Camera is a responsive/adaptive slideshow. <em>Try to resize the browser window</em>
+              </div>
+            </div>
+            <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/leaf.jpg">
+              <div class="camera_caption fadeFromBottom">
+                It uses a light version of jQuery mobile, <em>navigate the slides by swiping with your fingers</em>
+              </div>
+            </div>
+            <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/road.jpg">
+              <div class="camera_caption fadeFromBottom">
+                <em>It's completely free</em> (even if a donation is appreciated)
+              </div>
+            </div>
+            <div data-thumb="images/slides/thumbs/sea.jpg" data-src="images/slides/sea.jpg">
+              <div class="camera_caption fadeFromBottom">
+                Camera slideshow provides many options <em>to customize your project</em> as more as possible
+              </div>
+            </div>
+            <div data-thumb="images/slides/thumbs/shelter.jpg" data-src="images/slides/shelter.jpg">
+              <div class="camera_caption fadeFromBottom">
+                It supports captions, HTML elements and videos and <em>it's validated in HTML5</em> (<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.pixedelic.com%2Fplugins%2Fcamera%2F&amp;charset=%28detect+automatically%29&amp;doctype=Inline&amp;group=0&amp;user-agent=W3C_Validator%2F1.2" target="_blank">have a look</a>)
+              </div>
+            </div>
+            <div data-thumb="images/slides/thumbs/tree.jpg" data-src="images/slides/tree.jpg">
+              <div class="camera_caption fadeFromBottom">
+                Different color skins and layouts available, <em>fullscreen ready too</em>
+              </div>
+            </div>
+              </div><!-- #camera_wrap_1 -->
+
+    	      
+            </div>
       </div>
     </div>
   </div>
