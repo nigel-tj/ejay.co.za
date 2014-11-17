@@ -6,13 +6,13 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  match 'index' => 'home#index', :as => 'index', :via => :get
+  match 'index' => 'home#index-slideshow', :as => 'index', :via => :get
   match 'gallery' => 'home#gallery', :as => 'gallery', :via => :get
   match 'music' => 'home#music', :as => 'music', :via => :get
   match 'about' => 'home#about', :as => 'about', :via => :get
 
   # You can have the root of your site routed with "root"
-   root 'home#index'
+   root 'home#index-slideshow'
 
 
   # Example of regular route:
