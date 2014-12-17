@@ -22,9 +22,25 @@
             $(function () {
                 $.vegas('slideshow', {
                     backgrounds: [
-                      { src: 'assets/img/1.jpg', fade: 1000, delay: 9000 }, //CHANGE THESE IMAGES WITH YOUR ORIGINAL IMAGES
+                      { src: 'assets/img/5.jpg', fade: 1000, delay: 9000 }, //CHANGE THESE IMAGES WITH YOUR ORIGINAL IMAGES
                       { src: 'assets/img/2.jpg', fade: 1000, delay: 9000 }, //THESE IMAGES ARE FOR DEMO PURPOSE ONLY YOU, CAN NOT USE THEM WITHOUT AUTHORS PERMISSION
                        { src: 'assets/img/3.jpg', fade: 1000, delay: 9000 }, //SEE DOCUMENTATION FOR ORIGINAL URLs/LINKs OF IMAGES
+                                  { src: 'assets/img/4.jpg', fade: 1000, delay: 9000 },
+                                  { src: 'assets/img/1.jpg', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4101.jpg', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4102.jpg', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4104.jpg', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4105.jpg', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4393.jpg', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4413.JPG', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4414.JPG', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4415.JPG', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4416.JPG', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4417.JPG', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4418.JPG', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4419.JPG', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4420.JPG', fade: 1000, delay: 9000 },
+                                  { src: 'images/uploads/deadGwadz/IMG_4421.JPG', fade: 1000, delay: 9000 }
                      
                     ]
                 })('overlay', {
@@ -36,7 +52,7 @@
 
             $(function () {
                 var $header = $("#headLine");
-                var header = ['WORKING..', 'LOADING..']; // CHANGE TEXT HERE TO YOUR TEXT , YOU CAN USE MANY WORDS SEPRATED BY , 
+                var header = ['WORKING..', 'LOADING..','ejay.co.za']; // CHANGE TEXT HERE TO YOUR TEXT , YOU CAN USE MANY WORDS SEPRATED BY , 
 
                 var position = -1;
 
